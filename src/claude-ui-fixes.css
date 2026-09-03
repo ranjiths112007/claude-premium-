@@ -1,0 +1,39 @@
+/* Final visual fixes: use the supplied orange Claude symbol instead of the broken star-like inline path. */
+.claude-logo{background:url('/claude-symbol.svg') center/contain no-repeat!important;color:transparent!important}
+.claude-logo path{display:none!important}
+.brand .claude-logo{display:none!important}
+.brand:before{background:url('/claude-symbol.svg') center/contain no-repeat!important}
+.message-avatar .claude-logo{width:25px;height:25px}
+.model .claude-logo{width:21px;height:21px}
+.welcome-logo .claude-logo{width:58px;height:58px}
+
+/* Match the supplied palette exactly. */
+:root.dark{
+  --bg:#141414!important;
+  --sidebar:#101010!important;
+  --panel:#141414!important;
+  --text:#F4F3EE!important;
+  --muted:#B1ADA1!important;
+  --border:#373734!important;
+  --soft:#373734!important;
+  --user:#242422!important;
+  --accent:#D97757!important;
+}
+
+/* The screenshot uses the same dark treatment even before toggling theme. */
+html,body,#root,.app,.main{background:#141414}
+.sidebar{background:#101010;border-right-color:#373734}
+.topbar{background:#141414}
+.model{background:#191919;color:#B1ADA1}
+.new-chat{background:#373734;color:#F4F3EE}
+.nav:hover,.nav.active,.chat:hover,.chat.active{background:#242422;color:#F4F3EE}
+.recent{color:#77746d}
+.composer{background:#222221;border-color:#373734}
+.composer textarea{color:#F4F3EE}
+.composer textarea::placeholder{color:#77746d}
+.send{background:#F4F3EE;color:#141414}
+.suggestions button{background:#373734;border-color:#373734;color:#F4F3EE}
+.message-content{color:#F4F3EE}
+.message-name{color:#B1ADA1}
+.message-avatar{background:#242422}
+.side-bottom{border-top:1px solid #373734}
