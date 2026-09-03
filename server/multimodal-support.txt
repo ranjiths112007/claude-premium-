@@ -1,0 +1,1 @@
+This marker enables multimodal support in the server integration. The primary chat route continues to use the OpenAI-compatible /chat/completions endpoint.
