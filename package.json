@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-    "dev:server": "node server/index.js",
+    "dev:server": "node server/multimodal.js",
     "dev:client": "vite --host 0.0.0.0",
-    "start": "node server/index.js"
+    "start": "node server/multimodal.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
