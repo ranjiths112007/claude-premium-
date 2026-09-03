@@ -1,0 +1,22 @@
+/* Claude-inspired dark UI using the supplied palette */
+:root{
+  --bg:#141414; --sidebar:#101010; --panel:#141414;
+  --text:#F4F3EE; --muted:#B1ADA1; --border:#373734;
+  --soft:#242422; --user:#242422; --accent:#D97757;
+}
+html,body,#root{background:#141414!important;color:#F4F3EE!important}
+body{font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.app,.main{background:#141414!important}
+.sidebar{width:287px;flex:0 0 287px;background:#101010!important;border-right:1px solid #373734!important;padding:14px 8px 10px!important}
+.brand{height:36px;padding:0 7px;gap:7px;font-family:Georgia,"Times New Roman",serif;font-size:20px;color:#F4F3EE}
+.brand .claude-logo{display:none}.brand:before{content:"";width:27px;height:27px;background:url('/claude-symbol.svg') center/contain no-repeat;display:block}
+.brand #collapse{font-size:20px;color:#B1ADA1}.new-chat{margin:7px 1px 10px;height:33px;border-radius:7px;background:#373734!important;color:#F4F3EE!important;font-weight:600;padding:0 10px}.new-chat kbd{display:none}
+nav{display:grid;gap:2px;margin:0 1px 18px}.nav{height:34px;border:0;background:transparent;border-radius:7px;text-align:left;padding:0 9px;color:#B1ADA1;font-size:13px;display:flex;align-items:center;gap:10px}.nav:hover,.nav.active{background:#242422;color:#F4F3EE}.nav-item{height:auto;padding:0;background:transparent}
+.recent{font-size:11px;text-transform:none;letter-spacing:0;font-weight:500;color:#77746d;padding:0 9px 7px}.chat-list{padding:0 1px}.chat{height:34px;border-radius:6px;color:#D8D5CC;font-size:12px;padding:0 9px}.chat:hover,.chat.active{background:#242422}
+.side-bottom{border-top:1px solid #373734;padding-top:8px}.account{padding:7px 8px;color:#F4F3EE}.account>strong{width:27px;height:27px;border-radius:50%;background:#373734;color:#F4F3EE}.account small{color:#77746d}
+.topbar{height:62px;padding:0 16px;border-bottom:0}.model{color:#B1ADA1;font-size:12px;background:#191919;padding:8px 10px}.model .claude-logo{display:none}.top-icon{color:#B1ADA1}
+.conversation{padding:26px 24px 205px}.welcome{width:min(800px,100%);margin:22vh auto 0}.welcome-logo{display:none}.welcome h1{font-family:Georgia,"Times New Roman",serif;font-size:40px;font-weight:400;letter-spacing:-.04em;color:#F4F3EE;margin:0}.welcome h1{font-size:0}.welcome h1:after{content:"Back at it, Ranjith S";font-size:40px}.welcome h1:before{content:"";display:inline-block;width:38px;height:38px;vertical-align:-7px;margin-right:8px;background:url('/claude-symbol.svg') center/contain no-repeat}.welcome p{display:none}
+.suggestions{display:flex;justify-content:center;grid-template-columns:none;gap:8px;margin-top:31px}.suggestions button{min-height:32px;height:32px;border:0;background:#373734;border-radius:7px;padding:0 11px;display:flex;align-items:center;gap:6px;color:#F4F3EE}.suggestions button b{font-size:11px;font-weight:600}.suggestions button span{display:none}
+.composer-zone{padding:18px 24px 15px;background:linear-gradient(transparent,#141414 26%,#141414 100%)!important}.composer{width:min(640px,100%);border:1px solid #373734;border-radius:14px;background:#222221!important;box-shadow:none}.composer:focus-within{border-color:#55534d;box-shadow:0 0 0 1px #373734}.composer textarea{min-height:58px;padding:14px 15px 7px;color:#F4F3EE}.composer textarea::placeholder{color:#77746d}.composer-row{height:43px}.tools label,.tools button{color:#B1ADA1}.tools span{color:#77746d}.send{background:#F4F3EE;color:#141414}.disclaimer{color:#77746d;font-size:9px}
+.attachments{width:min(640px,100%)}.file-chip{background:#222221;border-color:#373734}.message{width:min(800px,100%)}.message-name{color:#B1ADA1}.message-content{color:#F4F3EE}.message-avatar{background:#242422;color:#F4F3EE}.code-card{background:#1d1d1b;border-color:#373734}.model-menu{background:#222221;border-color:#373734}
+@media(max-width:800px){.sidebar{width:287px;flex-basis:287px}.welcome{margin-top:15vh}.welcome h1:after{font-size:30px}.welcome h1:before{width:30px;height:30px}.suggestions{flex-wrap:wrap}.composer-zone{padding:12px}.composer{width:100%}}
